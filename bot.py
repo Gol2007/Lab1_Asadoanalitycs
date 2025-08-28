@@ -20,8 +20,7 @@ PROBLEMS_PATH = Path(__file__).parent / "problems.yaml"
 
 
 
-# Cargar variables desde .env
-load_dotenv()
+
 
 BOT_TOKEN = os.getenv("SLACK_BOT_TOKEN")
 CHANNEL_ID = os.getenv("SLACK_CHANNEL_ID")
@@ -113,11 +112,15 @@ def post_to_slack(payload: Dict):
             f"Error Slack: {e.response.data if hasattr(e, 'response') else e}"
         )
 
+def cargar_preguntas():
+    raise Exception("Sorry, no hay implementacion")
 
 def main():
+    # Cargar variables desde .env
+    load_dotenv()
     if not BOT_TOKEN or not CHANNEL_ID:
         raise RuntimeError("Faltan variables de entorno")
-
+    cargar_preguntas()
     problems = load_problems()
     state = load_state(len(problems))
     prob = select_today(problems, state)
