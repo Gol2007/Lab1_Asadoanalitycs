@@ -1,0 +1,24 @@
+- title: "Clase Mascota"
+  prompt: "Crea una clase Mascota con atributos nombre y especie."
+  hints: ["Usa __init__", "self.atributo"]
+  tags: ["poo", "mascotas"]
+
+- title: "Método alimentar"
+  prompt: "Agrega un método alimentar() que imprima '<nombre> está comiendo'."
+  hints: ["Usa print", "Accede a self.nombre"]
+  tags: ["poo", "mascotas", "métodos"]
+
+- title: "Herencia Perro"
+  prompt: "Crea la clase Perro que herede de Mascota y agregue un método ladrar()."
+  hints: ["Usa super()", "Método específico de Perro"]
+  tags: ["poo", "mascotas", "herencia"]
+
+- title: "Encapsular edad"
+  prompt: "Haz privado el atributo edad y crea métodos para leerlo (get) y modificarlo (set)."
+  hints: ["Usa __edad", "Getters y setters"]
+  tags: ["poo", "mascotas", "encapsulamiento"]
+
+- title: "Contador de Mascotas"
+  prompt: "Agrega un atributo de clase que cuente cuántas mascotas se crean en total."
+  hints: ["Usa variable de clase", "Incrementa en __init__"]
+  tags: ["poo", "mascotas", "atributos de clase"]
