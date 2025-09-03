@@ -1,24 +1,88 @@
-- title: "Clase Mascota"
-  prompt: "Crea una clase Mascota con atributos nombre y especie."
-  hints: ["Usa __init__", "self.atributo"]
-  tags: ["poo", "mascotas"]
-
-- title: "Método alimentar"
-  prompt: "Agrega un método alimentar() que imprima '<nombre> está comiendo'."
-  hints: ["Usa print", "Accede a self.nombre"]
-  tags: ["poo", "mascotas", "métodos"]
-
-- title: "Herencia Perro"
-  prompt: "Crea la clase Perro que herede de Mascota y agregue un método ladrar()."
-  hints: ["Usa super()", "Método específico de Perro"]
-  tags: ["poo", "mascotas", "herencia"]
-
-- title: "Encapsular edad"
-  prompt: "Haz privado el atributo edad y crea métodos para leerlo (get) y modificarlo (set)."
-  hints: ["Usa __edad", "Getters y setters"]
-  tags: ["poo", "mascotas", "encapsulamiento"]
-
-- title: "Contador de Mascotas"
-  prompt: "Agrega un atributo de clase que cuente cuántas mascotas se crean en total."
-  hints: ["Usa variable de clase", "Incrementa en __init__"]
-  tags: ["poo", "mascotas", "atributos de clase"]
+- title: Clase Mascota
+  prompt: Crea una clase Mascota con atributos nombre y especie.
+  hints:
+  - Usa __init__
+  - self.atributo
+  tags:
+  - poo
+  - mascotas
+- title: Método alimentar
+  prompt: Agrega un método alimentar() que imprima '<nombre> está comiendo'.
+  hints:
+  - Usa print
+  - Accede a self.nombre
+  tags:
+  - poo
+  - mascotas
+  - métodos
+- title: Herencia Perro
+  prompt: Crea la clase Perro que herede de Mascota y agregue un método ladrar().
+  hints:
+  - Usa super()
+  - Método específico de Perro
+  tags:
+  - poo
+  - mascotas
+  - herencia
+- title: Encapsular edad
+  prompt: Haz privado el atributo edad y crea métodos get y set para accederlo.
+  hints:
+  - Usa __edad
+  - Getters y setters
+  tags:
+  - poo
+  - mascotas
+  - encapsulamiento
+- title: Contador de Mascotas
+  prompt: Agrega un atributo de clase que cuente cuántas mascotas se crean en total.
+  hints:
+  - Usa variable de clase
+  - Incrementa en __init__
+  tags:
+  - poo
+  - mascotas
+  - atributos de clase
+- title: Método estático
+  prompt: Agrega un método estático que muestre un mensaje genérico sobre mascotas.
+  hints:
+  - Usa @staticmethod
+  - No requiere self
+  tags:
+  - poo
+  - métodos
+  - estáticos
+- title: Clase Gato
+  prompt: Crea la clase Gato que herede de Mascota y tenga un método maullar().
+  hints:
+  - Herencia
+  - Definir método específico
+  tags:
+  - poo
+  - mascotas
+  - herencia
+- title: Polimorfismo
+  prompt: Haz que Perro y Gato sobrescriban un método sonido() con su propio comportamiento.
+  hints:
+  - Usa override
+  - Mismo nombre, diferente implementación
+  tags:
+  - poo
+  - mascotas
+  - polimorfismo
+- title: Representación
+  prompt: Agrega __str__ a Mascota para imprimir '<nombre> es un/a <especie>'.
+  hints:
+  - Definir __str__
+  - Usa return con formato
+  tags:
+  - poo
+  - métodos especiales
+- title: Comparación de edad
+  prompt: Agrega __lt__ para comparar mascotas por edad con '<'.
+  hints:
+  - Definir __lt__
+  - Comparar self.__edad
+  tags:
+  - poo
+  - métodos especiales
+  - comparación

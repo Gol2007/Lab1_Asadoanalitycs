@@ -14,19 +14,23 @@ from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 import os
 from dotenv import load_dotenv
+# antes: había def cargar_preguntas() que levantaba Exception
+# ahora importamos la implementación real
+from POO import cargar_preguntas
+
 
 STATE_PATH = Path(__file__).parent / "state.json"
 PROBLEMS_PATH = Path(__file__).parent / "problems.yaml"
 
 
-
-
+load_dotenv()
 
 BOT_TOKEN = os.getenv("SLACK_BOT_TOKEN")
 CHANNEL_ID = os.getenv("SLACK_CHANNEL_ID")
 
 if not BOT_TOKEN or not CHANNEL_ID:
     raise RuntimeError("Faltan variables SLACK_BOT_TOKEN o SLACK_CHANNEL_ID en .env")
+
 
 
 
@@ -112,8 +116,8 @@ def post_to_slack(payload: Dict):
             f"Error Slack: {e.response.data if hasattr(e, 'response') else e}"
         )
 
-def cargar_preguntas():
-    raise Exception("Sorry, no hay implementacion")
+#def cargar_preguntas():
+   # raise Exception("Sorry, no hay implementacion")
 
 def main():
     # Cargar variables desde .env

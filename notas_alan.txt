@@ -1,0 +1,13 @@
+1) NO DEJA PASAR TOKENS EL PUSH SI NO ESTAN EN .ENV / USAMOS .GITIGNORE PARA QUE ESA CARPETA NO SE SUBA AL github
+2) CREAMOS RAMAS POO Y FUNCIONAL 
+3)COMENZAMOS CON LA RAMA POO . CLONAMOS EL MAIN Y CREAMOS EL YAML Y EL SCRIPT POO.py
+4)CUANDO CORRO EL SCRIPT HASTA ACA EXPLOTA EN CARGAR PREGUNTAS () XQ LO DEJAMOS VACIO SIN FUNCIONALIDAD Y YA EXISTE EL load_problems()
+5)el token que estás usando está inactivo. Causas posibles:
+
+El bot token fue revocado o la app fue desinstalada del workspace.
+
+El token pertenece a una cuenta de usuario desactivada.
+
+El token expiró o fue reemplazado por otra instalación.
+
+6) es medio un quilombo el tema de poo.py y el yaml no lo entiendo bien 
