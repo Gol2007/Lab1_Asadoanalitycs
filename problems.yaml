@@ -1,0 +1,24 @@
+- title: "Lista nombres"
+  prompt: "Usa map para agregar 'Sr.' al inicio de cada nombre ['Bobby','Luna']."
+  hints: ["Usa lambda", "Convierte a lista"]
+  tags: ["funcional", "mascotas", "map"]
+
+- title: "Filtrar perros"
+  prompt: "Usa filter para quedarte solo con los perros de [('Bobby','perro'),('Luna','gato')]."
+  hints: ["Usa lambda t: t[1]=='perro'", "Convierte a lista"]
+  tags: ["funcional", "mascotas", "filter"]
+
+- title: "Reducir peso"
+  prompt: "Usa reduce para sumar el peso de [5, 10, 3] kilos."
+  hints: ["Importa reduce", "Usa lambda x,y: x+y"]
+  tags: ["funcional", "mascotas", "reduce"]
+
+- title: "Composición cuidado"
+  prompt: "Compón dos funciones: una que agregue 'baño' y otra que agregue 'vacuna'."
+  hints: ["Aplica funciones en secuencia", "Devuelve cadena final"]
+  tags: ["funcional", "mascotas", "composición"]
+
+- title: "Closure veterinario"
+  prompt: "Crea una función que devuelva otra función que agregue un costo fijo a la consulta."
+  hints: ["Usa variables no locales", "Devuelve función interna"]
+  tags: ["funcional", "mascotas", "closures"]
