@@ -11,3 +11,21 @@ El token pertenece a una cuenta de usuario desactivada.
 El token expiró o fue reemplazado por otra instalación.
 
 6) es medio un quilombo el tema de poo.py y el yaml no lo entiendo bien 
+
+
+
+
+
+Resolución de Conflictos
+Cuando ambas ramas se fusionen con main, habrá un conflicto en bot.py porque ambas modifican la función cargar_preguntas. El líder debe resolverlo editando manualmente bot.py para que llame a ambas funciones:
+
+python
+def cargar_preguntas():
+    from POO import cargar_preguntas_poo
+    from Funcional import cargar_preguntas_funcional
+    cargar_preguntas_poo()
+    cargar_preguntas_funcional()
+Ejercicios Extra
+Revertir un commit: Usa git revert <commit_hash> para deshacer un commit específico.
+
+Remover un archivo del staging: Usa git reset HEAD <file> para sacar un archivo del área de staging.
