@@ -14,9 +14,6 @@ from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 import os
 from dotenv import load_dotenv
-# antes: había def cargar_preguntas() que levantaba Exception
-# ahora importamos la implementación real
-from POO import cargar_preguntas
 
 
 STATE_PATH = Path(__file__).parent / "state.json"
@@ -116,8 +113,10 @@ def post_to_slack(payload: Dict):
             f"Error Slack: {e.response.data if hasattr(e, 'response') else e}"
         )
 
-#def cargar_preguntas():
+def cargar_preguntas():
    # raise Exception("Sorry, no hay implementacion")
+    from POO import cargar_preguntas_poo
+    cargar_preguntas_poo()  # Ejecutar la función de POO
 
 def main():
     # Cargar variables desde .env
